@@ -1,0 +1,618 @@
+/* Colours
+============================================*/
+/* Fonts
+============================================*/
+/* Bold & Powerful ( Default ) */
+/* Therapy */
+/* Layout / Spacing
+============================================*/
+/* Font Sizes
+============================================*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;600;700&family=Rubik+80s+Fade&display=swap");
+@font-face {
+  font-family: Tommy;
+  src: url("fonts/made_tommy/MADE TOMMY Thin Outline_PERSONAL USE.otf");
+}
+.editor-styles-wrapper {
+  font-family: "Quicksand", sans-serif;
+  background: var(--wp--preset--color--primary);
+  padding: 0px 40px;
+  /* Button Base
+  ====================================*/
+  /*
+  ========================================
+  SVG Dividers
+  ========================================
+  */
+  /* Custom Gutenberg colors */
+  /* 20px */
+  /* 30px */
+  /* 40px */
+  /* 50px */
+  /* 75px */
+  /* Example: Responsive Margins */
+  /* Padding Bottom
+  ============================================*/
+  /* 16px */
+  /* 20px */
+  /* 40px */
+  /* 50px */
+  /* 75px */
+  /* Padding Top
+  ============================================*/
+  /* 10px */
+  /* 20px */
+  /* 40px */
+  /* 50px */
+  /* 75px */
+  /* 75px */
+  /* FAQ Section */
+  /* FAQ Item */
+  /* Arrow Styling */
+  /* FAQ Answer */
+  /* Responsive Design */
+}
+.editor-styles-wrapper .wp-block-post-title {
+  margin-bottom: 60px;
+}
+.editor-styles-wrapper p,
+.editor-styles-wrapper li {
+  font-size: 20px;
+  font-weight: 100;
+  color: inherit;
+}
+.editor-styles-wrapper a {
+  color: var(--wp--preset--color--accent);
+  text-decoration: none;
+}
+.editor-styles-wrapper a:hover {
+  color: var(--wp--preset--color--accent);
+}
+.editor-styles-wrapper strong {
+  font-weight: 600;
+}
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5 {
+  font-family: "komu-a", sans-serif;
+  letter-spacing: 0.06em;
+}
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper p,
+.editor-styles-wrapper li,
+.editor-styles-wrapper div {
+  color: var(--color-body-txt);
+}
+.editor-styles-wrapper h4 {
+  font-family: "Quicksand", sans-serif;
+}
+.editor-styles-wrapper p,
+.editor-styles-wrapper a,
+.editor-styles-wrapper li,
+.editor-styles-wrapper div,
+.editor-styles-wrapper input,
+.editor-styles-wrapper textarea {
+  font-family: "Quicksand", sans-serif;
+}
+.editor-styles-wrapper .txt-small {
+  font-size: 1.125rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-small {
+    font-size: 1rem;
+  }
+}
+.editor-styles-wrapper .txt-medium {
+  font-size: 1.375rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-medium {
+    font-size: 1.25rem;
+  }
+}
+.editor-styles-wrapper .txt-large {
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-large {
+    font-size: 1.75rem;
+  }
+}
+.editor-styles-wrapper .txt-xlarge {
+  font-size: 3.625rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-xlarge {
+    font-size: 3rem;
+  }
+}
+.editor-styles-wrapper .txt-xxlarge {
+  font-size: 4.75rem;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .txt-xxlarge {
+    font-size: 3.25rem;
+  }
+}
+.editor-styles-wrapper .font-brand {
+  font-family: "komu-a", sans-serif;
+  letter-spacing: 0.06em;
+}
+.editor-styles-wrapper .font-heading {
+  font-family: "Karmina", cursive;
+}
+.editor-styles-wrapper .font-small-heading {
+  font-family: "polymath" !important;
+}
+.editor-styles-wrapper .font-display {
+  font-family: "Quicksand", sans-serif;
+}
+.editor-styles-wrapper .font-default-display {
+  font-family: "polymath" !important;
+}
+.editor-styles-wrapper .rwd-btn {
+  background: var(--wp--preset--color--accent);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  border: none;
+  /* padding: 12px 32px; */
+  padding: 12px 52px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05em;
+}
+@media only screen and (max-width: 769px) {
+  .editor-styles-wrapper .rwd-btn {
+    padding: 8px 38px;
+    font-size: 24px;
+  }
+}
+.editor-styles-wrapper .rwd-btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: transparent;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.editor-styles-wrapper .rwd-btn:hover {
+  /* background: #f8194d; */
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  /* color: ; */
+}
+.editor-styles-wrapper .rwd-btn:hover::before {
+  width: 100%;
+  background: #f8194d;
+}
+.editor-styles-wrapper .rwd-btn--small {
+  padding: 10px 28px;
+  font-size: 20px;
+}
+.editor-styles-wrapper .rwd-btn--main {
+  background: var(--wp--preset--color--primary);
+}
+.editor-styles-wrapper .rwd-btn--main:hover::before {
+  background: var(--color-main);
+}
+.editor-styles-wrapper .rwd-btn--secondary {
+  background: var(--color-secondary);
+}
+.editor-styles-wrapper .rwd-btn--secondary:hover::before {
+  background: var(--color-secondary);
+}
+.editor-styles-wrapper .rwd-btn--yellow {
+  background: var(--color-light-gold);
+}
+.editor-styles-wrapper .rwd-btn--yellow:hover::before {
+  background: var(--color-light-gold);
+}
+.editor-styles-wrapper .svg-divider-spacer {
+  height: 80px;
+  width: 100%;
+}
+.editor-styles-wrapper .svg-divider-slant {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.editor-styles-wrapper .svg-divider-slant svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+  transform: rotateY(180deg);
+}
+.editor-styles-wrapper .svg-divider-slant.inverted {
+  transform: rotate(0deg);
+}
+.editor-styles-wrapper .svg-divider-slant.is-top {
+  top: 0;
+  bottom: auto;
+}
+.editor-styles-wrapper .svg-divider-slant.is-bottom svg {
+  top: auto;
+  bottom: 0;
+}
+.editor-styles-wrapper .txt-bold {
+  font-weight: 600;
+}
+.editor-styles-wrapper .has-primary-color, .editor-styles-wrapper .txt-primary {
+  color: var(--wp--preset--color--primary);
+}
+.editor-styles-wrapper .has-primary-background-color, .editor-styles-wrapper .bg-primary {
+  background-color: var(--wp--preset--color--primary);
+}
+.editor-styles-wrapper .has-primary-fill-color {
+  fill: var(--wp--preset--color--primary);
+}
+.editor-styles-wrapper .has-secondary-color, .editor-styles-wrapper .txt-secondary {
+  color: var(--wp--preset--color--secondary);
+}
+.editor-styles-wrapper .has-secondary-background-color, .editor-styles-wrapper .bg-secondary {
+  background-color: var(--wp--preset--color--secondary);
+}
+.editor-styles-wrapper .has-secondary-fill-color {
+  fill: var(--wp--preset--color--secondary);
+}
+.editor-styles-wrapper .has-dark-color {
+  color: var(--wp--preset--color--dark);
+}
+.editor-styles-wrapper .has-dark-background-color {
+  background-color: var(--wp--preset--color--dark);
+}
+.editor-styles-wrapper .has-dark-fill-color {
+  fill: var(--wp--preset--color--dark);
+}
+.editor-styles-wrapper .has-accent-color, .editor-styles-wrapper .txt-accent {
+  color: var(--wp--preset--color--accent);
+}
+.editor-styles-wrapper .has-accent-background-color, .editor-styles-wrapper .bg-accent {
+  background-color: var(--wp--preset--color--accent);
+}
+.editor-styles-wrapper .has-accent-fill-color {
+  fill: var(--wp--preset--color--accent);
+}
+.editor-styles-wrapper .has-romance-color {
+  color: var(--wp--preset--color--romance);
+}
+.editor-styles-wrapper .has-romance-background-color {
+  background-color: var(--wp--preset--color--romance);
+}
+.editor-styles-wrapper .has-romance-fill-color {
+  fill: var(--wp--preset--color--romance);
+}
+.editor-styles-wrapper .has-white-color {
+  color: var(--wp--preset--color--white);
+}
+.editor-styles-wrapper .has-white-background-color {
+  background-color: var(--wp--preset--color--white);
+}
+.editor-styles-wrapper .has-white-fill-color {
+  fill: var(--wp--preset--color--white);
+}
+.editor-styles-wrapper .has-light-color {
+  color: var(--wp--preset--color--light);
+}
+.editor-styles-wrapper .has-light-background-color {
+  background-color: var(--wp--preset--color--light);
+}
+.editor-styles-wrapper .has-light-fill-color {
+  fill: var(--wp--preset--color--light);
+}
+.editor-styles-wrapper .has-black-color {
+  color: var(--wp--preset--color--black);
+}
+.editor-styles-wrapper .has-black-background-color {
+  background-color: var(--wp--preset--color--black);
+}
+.editor-styles-wrapper .has-black-fill-color {
+  fill: var(--wp--preset--color--black);
+}
+.editor-styles-wrapper .spacer-small {
+  height: 1.25rem;
+}
+.editor-styles-wrapper .spacer-medium {
+  height: 3.75rem;
+}
+.editor-styles-wrapper .spacer-large {
+  height: 2.5rem;
+}
+.editor-styles-wrapper .spacer-xlarge {
+  height: 3.125rem;
+}
+.editor-styles-wrapper .spacer-xxlarge {
+  height: 4.688rem;
+}
+@media (min-width: 768px) {
+  .editor-styles-wrapper {
+    /* 40px */
+    /* 60px */
+    /* 80px */
+    /* 100px */
+    /* 130px */
+  }
+  .editor-styles-wrapper .spacer-small {
+    height: 2.5rem;
+  }
+  .editor-styles-wrapper .spacer-medium {
+    height: 3.75rem;
+  }
+  .editor-styles-wrapper .spacer-large {
+    height: 5rem;
+  }
+  .editor-styles-wrapper .spacer-xlarge {
+    height: 6.25rem;
+  }
+  .editor-styles-wrapper .spacer-xxlarge {
+    height: 8.125rem;
+  }
+}
+.editor-styles-wrapper .pb-small, .editor-styles-wrapper .has-padding-bottom-small {
+  padding-bottom: 1rem;
+}
+.editor-styles-wrapper .pb-medium, .editor-styles-wrapper .has-padding-bottom-medium {
+  padding-bottom: 1.25rem;
+}
+.editor-styles-wrapper .pb-large, .editor-styles-wrapper .has-padding-bottom-large {
+  padding-bottom: 2.5rem;
+}
+.editor-styles-wrapper .pb-xlarge, .editor-styles-wrapper .has-padding-bottom-xlarge {
+  padding-bottom: 3.125rem;
+}
+.editor-styles-wrapper .pb-xxlarge, .editor-styles-wrapper .has-padding-bottom-xxlarge {
+  padding-bottom: 4.688rem;
+}
+@media (min-width: 768px) {
+  .editor-styles-wrapper {
+    /* 32px */
+    /* 60px */
+    /* 80px */
+    /* 100px */
+    /* 130px */
+  }
+  .editor-styles-wrapper .pb-small, .editor-styles-wrapper .has-padding-bottom-small {
+    padding-bottom: 2rem;
+  }
+  .editor-styles-wrapper .pb-medium, .editor-styles-wrapper .has-padding-bottom-medium {
+    padding-bottom: 3.75rem;
+  }
+  .editor-styles-wrapper .pb-large, .editor-styles-wrapper .has-padding-bottom-large {
+    padding-bottom: 5rem;
+  }
+  .editor-styles-wrapper .pb-xlarge, .editor-styles-wrapper .has-padding-bottom-xlarge {
+    padding-bottom: 6.25rem;
+  }
+  .editor-styles-wrapper .pb-xxlarge, .editor-styles-wrapper .has-padding-bottom-xxlarge {
+    padding-bottom: 8.125rem;
+  }
+}
+.editor-styles-wrapper .pt-small, .editor-styles-wrapper .has-padding-top-small {
+  padding-top: 0.625rem;
+}
+.editor-styles-wrapper .pt-medium, .editor-styles-wrapper .has-padding-top-medium {
+  padding-top: 1.25rem;
+}
+.editor-styles-wrapper .pt-large, .editor-styles-wrapper .has-padding-top-large {
+  padding-top: 2.5rem;
+}
+.editor-styles-wrapper .pt-xlarge, .editor-styles-wrapper .has-padding-top-xlarge {
+  padding-top: 3.125rem;
+}
+.editor-styles-wrapper .pt-xxlarge, .editor-styles-wrapper .has-padding-top-xxlarge {
+  padding-top: 4.688rem;
+}
+@media (min-width: 768px) {
+  .editor-styles-wrapper {
+    /* 40px */
+    /* 60px */
+    /* 80px */
+    /* 100px */
+    /* 130px */
+    /* 130px */
+  }
+  .editor-styles-wrapper .pt-small, .editor-styles-wrapper .has-padding-top-small {
+    padding-top: 2.5rem;
+  }
+  .editor-styles-wrapper .pt-medium, .editor-styles-wrapper .has-padding-top-medium {
+    padding-top: 3.75rem;
+  }
+  .editor-styles-wrapper .pt-large, .editor-styles-wrapper .has-padding-top-large {
+    padding-top: 5rem;
+  }
+  .editor-styles-wrapper .pt-xlarge, .editor-styles-wrapper .has-padding-top-xlarge {
+    padding-top: 6.25rem;
+  }
+  .editor-styles-wrapper .pt-xxlarge, .editor-styles-wrapper .has-padding-top-xxlarge {
+    padding-top: 8.125rem;
+  }
+}
+.editor-styles-wrapper .rwd-hero {
+  max-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #002073, transparent);
+}
+.editor-styles-wrapper .hero-2 {
+  margin-top: 0px;
+  padding: 160px 0px;
+  position: relative;
+}
+.editor-styles-wrapper .hero-2 h1 {
+  font-size: 48px;
+  color: var(--color-hero-text);
+}
+@media only screen and (min-width: 768px) {
+  .editor-styles-wrapper .hero-2 h1 {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .editor-styles-wrapper .hero-2 h1 {
+    font-size: 100px;
+  }
+}
+.editor-styles-wrapper .hero-2 p {
+  font-family: var(--font-default-display);
+  color: var(--color-txt);
+  font-size: 26px;
+}
+.editor-styles-wrapper .hero-2 img {
+  /* width: 600px; */
+  width: 75%;
+  margin: 0px auto;
+  display: block;
+}
+.editor-styles-wrapper .hero-2 .hero-img {
+  z-index: 3;
+  position: relative;
+}
+.editor-styles-wrapper .intro-section-block p {
+  font-family: "polymath" !important;
+  color: inherit;
+}
+.editor-styles-wrapper .selling-point-bold-block {
+  padding: 80px 0px;
+}
+.editor-styles-wrapper .selling-point-bold-block h2 {
+  font-size: 58px;
+  letter-spacing: 0.08rem;
+  line-height: 1em;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.editor-styles-wrapper .selling-point-bold-block img {
+  height: 100%;
+  max-height: 600px;
+  top: 0px;
+  width: 50%;
+  object-fit: cover;
+}
+.editor-styles-wrapper .selling-point-bold-block img.left-0 {
+  left: 0px;
+  border-radius: 0px 10px 10px 0px;
+}
+.editor-styles-wrapper .selling-point-bold-block img.right-0 {
+  right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+.editor-styles-wrapper .faq-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+.editor-styles-wrapper .faq-question {
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.editor-styles-wrapper .faq-question:hover {
+  background-color: #f0f0f0;
+}
+.editor-styles-wrapper .faq-arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: #151515;
+}
+.editor-styles-wrapper .faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+}
+.editor-styles-wrapper .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  color: #555;
+  font-size: 0.95rem;
+  padding: 0 20px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.editor-styles-wrapper .faq-answer p {
+  margin-bottom: 0px;
+  font-size: 1.2rem;
+}
+.editor-styles-wrapper .faq-item.active .faq-answer {
+  max-height: 200px;
+  /* Adjust based on your content size */
+  padding: 15px 20px;
+}
+@media (max-width: 768px) {
+  .editor-styles-wrapper .faq-question {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+  .editor-styles-wrapper .faq-answer {
+    font-size: 0.9rem;
+  }
+}
+.editor-styles-wrapper .icon-card-grid-block {
+  margin-top: -28px;
+}
+.editor-styles-wrapper .icon-card-grid-block img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+.editor-styles-wrapper .icon-card-grid-block .font-small-heading {
+  font-weight: 600;
+}
+.editor-styles-wrapper .contact-form {
+  padding: 80px 0px;
+  background: #f6e3cd;
+}
+.editor-styles-wrapper .contact-form input,
+.editor-styles-wrapper .contact-form textarea {
+  border: solid 3px #151515;
+  color: #151515;
+}
+.editor-styles-wrapper .contact-form input::placeholder,
+.editor-styles-wrapper .contact-form textarea::placeholder {
+  color: #151515;
+}
+.editor-styles-wrapper .contact-form .rwd-form-btn {
+  background: #0a9b9b;
+  color: #ffffff;
+  border: none;
+  padding: 8px 48px;
+  /* width: 50%; */
+  font-family: var(--font-small-heading);
+  font-size: 20px;
+  letter-spacing: 0.06em;
+  margin: 32px auto 0px auto;
+  display: block;
+}
+
+/*# sourceMappingURL=editor-style.css.map */

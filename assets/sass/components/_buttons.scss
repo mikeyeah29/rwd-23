@@ -1,0 +1,121 @@
+/* Button Base
+====================================*/
+
+// .rwd-button {
+//     padding: 20px;
+//     transition: 0.3s;
+//     position: relative;
+//     border: solid 3px #fff;
+//     z-index: 1;
+//     margin-bottom: 40px;
+// }
+
+// .rwd-button::before {
+//     content: '';
+//     position: absolute;
+//     width: 0%;
+//     height: 100%;
+//     background: transparent;
+//     left: 0px;
+//     top: 0px;
+//     z-index: -1;
+//     transition: 0.3s;
+// }
+
+// .rwd-button:hover {
+//     background: rgba(0, 0, 0, 0.3);
+//     text-decoration: none;
+//     color: var(--color-secondary);
+// }
+
+// .rwd-button:hover::before {
+//     width: 100%;
+//     background: var(--color-accent);
+// }
+
+// .rwd-button p {
+//     margin: 0px;
+//     font-size: 30px;
+//     line-height: 1em;
+//     padding-top: 4px;
+// }
+
+.rwd-btn {
+    background: $color-accent;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    /* padding: 12px 32px; */
+    padding: 12px 52px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+    font-family: $font-display;
+    letter-spacing: 0.05em;
+}
+
+@media only screen and (max-width: 769px) {
+    .rwd-btn {
+        padding: 8px 38px;
+        font-size: 24px;
+    }
+}
+
+.rwd-btn::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+
+.rwd-btn:hover {
+    /* background: #f8194d; */
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    /* color: ; */
+}
+
+.rwd-btn:hover::before {
+    width: 100%;
+    background: #f8194d;
+}
+
+.rwd-btn--small {
+    padding: 10px 28px;
+    font-size: 20px;
+}
+
+.rwd-btn--main {
+    background: $color-primary;
+}
+
+.rwd-btn--main:hover::before {
+    background: var(--color-main);
+}
+
+.rwd-btn--secondary {
+    background: var(--color-secondary);
+}
+
+.rwd-btn--secondary:hover::before {
+    background: var(--color-secondary);
+}
+
+.rwd-btn--yellow {
+    background: var(--color-light-gold);
+}
+
+.rwd-btn--yellow:hover::before {
+    background: var(--color-light-gold);
+}

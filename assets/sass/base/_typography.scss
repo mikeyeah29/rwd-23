@@ -1,0 +1,107 @@
+// p {
+//     font-size: $font-size-medium; // 22px
+//     line-height: 1.45em;
+//     letter-spacing: -0.05em;
+//     color: $color-dark;
+//     @media (max-width: 768px) {
+//         font-size: $font-size-medium-mobile;
+//     }
+// }
+
+p,
+li {
+    font-size: 20px;
+    font-weight: 100;
+    color: inherit;
+}
+
+a {
+    color: $color-accent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-accent;
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-brand;
+    letter-spacing: 0.06em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+div {
+    color: var(--color-body-txt);
+}
+
+h4 {
+    font-family: $font-display;
+}
+
+p,
+a,
+li,
+div,
+input,
+textarea {
+    font-family: $font-display;
+}
+
+// Font sizes map
+$font-sizes: (
+    small: ($font-size-small, $font-size-small-mobile),
+    medium: ($font-size-medium, $font-size-medium-mobile),
+    large: ($font-size-large, $font-size-large-mobile),
+    xlarge: ($font-size-xlarge, $font-size-xlarge-mobile),
+    xxlarge: ($font-size-xxlarge, $font-size-xxlarge-mobile)
+);
+
+// Generate text size classes with scaling for mobile
+@each $name, $sizes in $font-sizes {
+    $desktop-size: nth($sizes, 1);
+    $mobile-size: nth($sizes, 2);
+
+    .txt-#{$name} {
+        font-size: $desktop-size;
+
+        @media (max-width: 768px) {
+            font-size: $mobile-size;
+        }
+    }
+}
+
+// Fonts 
+
+.font-brand {
+    font-family: $font-brand;
+    letter-spacing: 0.06em;
+}
+
+.font-heading {
+    font-family: $font-heading;
+}
+
+.font-small-heading {
+    font-family: $font-small-heading;
+}
+
+.font-display {
+    font-family: $font-display;
+}
+
+.font-default-display {
+    font-family: $font-default-display;
+}

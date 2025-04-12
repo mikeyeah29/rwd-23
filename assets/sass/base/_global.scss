@@ -1,0 +1,28 @@
+html {
+    font-size: $spacing-unit;
+}
+
+body {
+    background: #fff;
+    font-family: $font-display;
+}
+
+body {
+    /* background: var(--color-bg); */
+    background: var(--color-light);
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.img-portrait {
+  aspect-ratio: 3 / 4; /* Optional: Enforce a consistent aspect ratio */
+  object-fit: cover;
+}
+
+.img-landscape {
+  aspect-ratio: 3 / 2; /* Optional: Enforce a consistent aspect ratio */
+  object-fit: cover;
+}

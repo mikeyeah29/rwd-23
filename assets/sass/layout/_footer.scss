@@ -1,0 +1,26 @@
+footer {
+    background: $color-primary;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer i,
+footer h1,
+footer h2,
+footer h3,
+footer p {
+    color: $color-white !important;
+}
+
+.footer-darker {
+    background: $color-primary;
+    padding: 38px 0px;
+    color: #000;
+    text-align: center;
+}
+
+.footer-darker p {
+    margin: 0px;
+    font-size: 14px;
+}

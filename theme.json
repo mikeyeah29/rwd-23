@@ -1,0 +1,88 @@
+{
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "name": "Primary",
+                    "slug": "primary",
+                    "color": "#021249"
+                },
+                {
+                    "name": "Secondary",
+                    "slug": "secondary",
+                    "color": "#fff6dc"
+                },
+                {
+                    "name": "Accent",
+                    "slug": "accent",
+                    "color": "#dd1745"
+                },
+                {
+                    "name": "Romance",
+                    "slug": "romance",
+                    "color": "#fff9fa"
+                },
+                {
+                    "name": "Light",
+                    "slug": "light",
+                    "color": "#ffffff"
+                },
+                {
+                    "name": "Dark",
+                    "slug": "dark",
+                    "color": "#151515"
+                }
+            ],
+            "custom": true
+        },
+        "spacing": {
+            "spacingScale": {
+                "steps": 0
+            },
+            "padding": true,
+            "customPadding": false,
+            "customSpacingSize": false,
+            "spacingSizes": [
+                {
+                    "slug": "small",
+                    "size": "2.5rem",
+                    "name": "Small"
+                },
+                {
+                    "slug": "medium",
+                    "size": "3.75rem",
+                    "name": "Medium"
+                },
+                {
+                    "slug": "large",
+                    "size": "5rem",
+                    "name": "Large"
+                },
+                {
+                    "slug": "xlarge",
+                    "size": "6.25rem",
+                    "name": "X-Large"
+                },
+                {
+                    "slug": "xxlarge",
+                    "size": "8.125rem",
+                    "name": "XX-Large"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "color": {
+            "background": "#fff6dc",
+            "text": "#010101"
+        },
+        "blocks": {
+            "core/columns": {
+                "spacing": {
+                    "blockGap": "1.25rem"
+                }
+            }
+        }
+    }
+}

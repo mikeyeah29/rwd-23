@@ -1,0 +1,28 @@
+.contact-form {
+    padding: 80px 0px;
+    background: #f6e3cd;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border: solid 3px #151515;
+    color: #151515;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #151515;
+}
+
+.contact-form .rwd-form-btn {
+    background: #0a9b9b;
+    color: #ffffff;
+    border: none;
+    padding: 8px 48px;
+    /* width: 50%; */
+    font-family: var(--font-small-heading);
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    margin: 32px auto 0px auto;
+    display: block;
+}

@@ -1,0 +1,79 @@
+/* Colours
+============================================*/
+
+$color-oxform-blue: #02182B;
+$color-rwd-blue: #021249;
+
+// Color Names
+$color-primary: var(--wp--preset--color--primary);
+$color-secondary: var(--wp--preset--color--secondary);
+$color-accent: var(--wp--preset--color--accent);
+$color-romance: var(--wp--preset--color--romance);
+$color-dark: var(--wp--preset--color--dark);
+$color-light: var(--wp--preset--color--light);
+$color-white: var(--wp--preset--color--white);
+$color-black: var(--wp--preset--color--black);
+
+// Color Uses
+$primary-color: $color-primary;
+$secondary-color: $color-secondary;
+$accent-color: $color-accent;
+$color-text: $color-dark;
+
+/* Fonts
+============================================*/
+
+// Font Variation Themes
+
+/* Bold & Powerful ( Default ) */
+
+$font-brand: "komu-a", sans-serif;
+$font-display: "Quicksand", sans-serif;
+$font-alternate: "polymath";
+
+$font-heading: "Karmina", cursive;
+$font-small-heading: $font-alternate !important;
+$font-default-display: $font-alternate !important;
+
+/* Therapy */
+
+$font-brand--therapy: $font-brand;
+$font-display--therapy: $font-display;
+$font-alternate--therapy: $font-alternate;
+
+$font-small-heading--therapy: $font-alternate !important;
+$font-default-display--therapy: $font-alternate !important;
+
+
+/* Layout / Spacing
+============================================*/
+
+// Breakpoints
+$breakpoint-mobile: 576px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large: 2000px;
+
+// Spacing
+$spacing-unit: 16px;
+
+$space-xs: 10px;
+$space-sm: 20px;
+$space-md: 30px;
+$space-lg: 40px;
+
+/* Font Sizes
+============================================*/
+
+// Desktop
+$font-size-small: 1.125rem; // 18px;
+$font-size-medium: 1.375rem; // 22px;
+$font-size-large: 2rem; // 32px;
+$font-size-xlarge: 3.625rem; // 58px;
+$font-size-xxlarge: 4.75rem; // 76px;
+// Mobile
+$font-size-small-mobile: 1rem; // 16px;
+$font-size-medium-mobile: 1.25rem; // 20px;
+$font-size-large-mobile: 1.75rem; // 28px;
+$font-size-xlarge-mobile: 3rem; // 48px;
+$font-size-xxlarge-mobile: 3.25rem; // 50px;

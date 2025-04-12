@@ -1,0 +1,42 @@
+/*
+========================================
+SVG Dividers
+========================================
+*/
+
+.svg-divider-spacer {
+    height: 80px;
+    width: 100%;
+}
+
+.svg-divider-slant {
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.svg-divider-slant svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+    transform: rotateY(180deg);
+}
+
+.svg-divider-slant.inverted {
+    transform: rotate(0deg);
+}
+
+.svg-divider-slant.is-top {
+    top: 0;
+    bottom: auto;
+}
+
+.svg-divider-slant.is-bottom svg {
+    top: auto;
+    bottom: 0;
+}
