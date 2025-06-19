@@ -41,7 +41,7 @@
 // }
 
 .rwd-btn {
-    background: $color-accent;
+    background: linear-gradient(to right, #FE6E04, #E60951);
     border-radius: 4px;
     color: #fff;
     font-weight: 600;
@@ -56,6 +56,9 @@
     z-index: 1;
     font-family: $font-display;
     letter-spacing: 0.05em;
+    &.is-loading {
+        
+    }
 }
 
 @media only screen and (max-width: 769px) {

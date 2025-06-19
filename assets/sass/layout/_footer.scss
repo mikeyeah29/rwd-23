@@ -14,7 +14,7 @@ footer p {
 }
 
 .footer-darker {
-    background: $color-primary;
+    background: $primary-color;
     padding: 38px 0px;
     color: #000;
     text-align: center;
@@ -23,4 +23,42 @@ footer p {
 .footer-darker p {
     margin: 0px;
     font-size: 14px;
+}
+
+.footer-contact {
+    list-style: none;
+    text-align: right;
+}
+
+.footer-contact i {
+    margin-left: 10px;
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+.footer-contact a {
+    color: #fff;
+    transition: 0.3s;
+    font-size: 18px;
+}
+
+.footer-contact a:hover {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.footer-contact-form h3 {
+    font-size: 42px;
+    color: var(--color-white);
+}
+
+.footer-contact-form button {
+    background: #fff;
+    color: var(--color-accent);
+    border: none;
+    padding: 8px 25px;
+    /* width: 50%; */
+    font-family: var(--font-default-display);
+    font-size: 20px;
+    letter-spacing: 0.06em;
 }

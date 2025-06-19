@@ -4,6 +4,7 @@ require_once get_template_directory() . '/inc/class-scripts.php';
 require_once get_template_directory() . '/inc/class-menus.php';
 require_once get_template_directory() . '/inc/class-gutenberg-setup.php';
 require_once get_template_directory() . '/inc/class-gutenberg-helpers.php';
+require_once get_template_directory() . '/inc/class-theme-styles.php';
 
 $scripts = new RWD\Scripts();
 $menus = new RWD\Menus();
@@ -15,6 +16,19 @@ $gutenbergSetup = new RWD\GutenbergSetup();
 foreach (glob(get_template_directory() . '/inc/blocks/*.php') as $file) {
     require_once $file;
 }
+
+/* Ajax Forms
+=============================================*/
+
+require_once get_stylesheet_directory() . '/classes/ajax-forms/class-base-form-handler.php';
+require_once get_stylesheet_directory() . '/classes/ajax-forms/class-form-book-a-call.php';
+
+new \RWD\AjaxForms\BookACallFormHandler();
+
+/* CPTs
+=============================================*/
+
+require_once get_stylesheet_directory() . '/classes/cpts/class-cpt-services.php';
 
 /* Other Functions
 =============================================*/

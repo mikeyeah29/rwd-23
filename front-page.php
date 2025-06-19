@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="overflow-hidden">
     
     <?php the_content(); ?>
 

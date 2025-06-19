@@ -1,4 +1,4 @@
-<footer>
+<footer class="border-top">
 
     <div class="footer-darker">
         <div class="container">
@@ -11,8 +11,29 @@
                         <img src="img/social_icons/ig.png">
                         <img src="img/social_icons/yt.png">
                     </div> -->
-                    <h1 class="logoText logoText--footer"><?php echo get_bloginfo('name'); ?></h1>
-                    <p>Copyright © <?php echo date('Y'); ?>. <?php echo get_bloginfo('name'); ?>. All Rights Reserved.</p>
+                    <div class="d-flex justify-content-between align-items-start">
+                        <div>
+                            <h1 class="logoText logoText--footer">RWD</h1>
+                            <!-- <img src="img/social_icons/fb.png"> -->
+                        </div>
+                        <div>
+                            <ul class="footer-contact">
+                                <li>
+                                    <a href="mailto:<?php echo antispambot('mike@rockettwd.co.uk'); ?>">
+                                        <?php echo antispambot('mike@rockettwd.co.uk'); ?>
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:<?php echo antispambot('+44 (0) 7736546570'); ?>">
+                                        <?php echo antispambot('+44 (0) 7736546570'); ?>
+                                        <i class="fa fa-phone"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-center text-md-right">Copyright © <?php echo date('Y'); ?>. <?php echo get_bloginfo('name'); ?>. All Rights Reserved.</p>
                 </div>
 
             </div>

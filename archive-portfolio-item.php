@@ -6,35 +6,7 @@
 ]); ?>
 
 <style>
-
-  /* .portfolio-item-simple {
-      aspect-ratio: 16 / 9;
-      margin-bottom: 30px;
-      background-size: cover;
-      padding: 28px;
-      position: relative;
-  }
-
-  .portfolio-item-simple:after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      top: 0px;
-      left: 0px;
-      background: linear-gradient(rgba(0,0,0.8), transparent);
-  }
-
-  .portfolio-item-simple h2 {
-      z-index: 1;
-      position: relative;
-      color: #fff;
-  }
-
-   .portfolio-item-simple:nth-child(2) {
-        outline: red;
-    } */
-
+    
     .category-filter {
         margin-bottom: 30px;
     }

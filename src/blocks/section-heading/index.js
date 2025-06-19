@@ -20,18 +20,18 @@ registerBlockType('rwd/section-heading', {
     attributes: {
         eyebrow: { type: 'string', default: '' },
         heading: { type: 'string', default: '' },
+        supportingText: { type: 'string', default: '' },
         textAlign: { type: 'string', default: 'center' },
         backgroundColor: { type: 'string', default: 'white' },
         largeHeading: { type: 'boolean', default: true }, // new toggle
     },
     supports: {
         html: false,
-        spacing: {
-            padding: true,
-        },
+        color: { background: true, text: true },
+        spacing: { padding: true }
     },
     edit: ({ attributes, setAttributes }) => {
-        const { eyebrow, heading, textAlign, backgroundColor, largeHeading } = attributes;
+        const { eyebrow, heading, supportingText, textAlign, backgroundColor, largeHeading } = attributes;
         const themeColors = useSetting('color.palette') || [];
 
         const headingSizeClass = largeHeading ? 'txt-xxlarge' : 'txt-xlarge';
@@ -89,10 +89,21 @@ registerBlockType('rwd/section-heading', {
                                 />
                                 <RichText
                                     tagName="h2"
-                                    className={`hdln-2 txt-dark ${headingSizeClass} txt-primary text-${textAlign}`}
+                                    className={`hdln-2 txt-dark ${headingSizeClass} text-${textAlign}`}
                                     placeholder={__('Heading text…')}
                                     value={heading}
                                     onChange={(value) => setAttributes({ heading: value })}
+                                />
+                            </div>
+                        </div>
+                        <div className="row d-flex justify-content-center">
+                            <div className="col-sm-7 text-center">
+                                <RichText
+                                    tagName="p"
+                                    className={`text-center mb-5`}
+                                    placeholder={__('Supporting text…')}
+                                    value={supportingText}
+                                    onChange={(value) => setAttributes({ supportingText: value })}
                                 />
                             </div>
                         </div>

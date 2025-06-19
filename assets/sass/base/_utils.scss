@@ -2,40 +2,101 @@
 
 .txt-bold { font-weight: 600; }
 
+.text-underline {
+    text-decoration: underline;
+}
+
 // WP Gutenburg Colours
 
+.has-primary-color, .txt-primary { color: $primary-color; }
+.has-primary-background-color, .bg-primary { background-color: $primary-color; }
+.has-primary-fill-color { fill: $primary-color; }
+
+.has-secondary-color, .txt-secondary { color: $secondary-color; }
+.has-secondary-background-color, .bg-secondary { background-color: $secondary-color; }
+.has-secondary-fill-color { fill: $secondary-color; }
+
+.has-accent-color, .txt-accent { color: $accent-color; }
+.has-accent-background-color, .bg-accent { background-color: $accent-color; }
+.has-accent-fill-color { fill: $accent-color; }
+
+.has-rwd-black-color, .txt-rwd-black, .txt-dark { color: $color-black; }
+.has-rwd-black-background-color, .bg-rwd-black, .bg-dark { background-color: $color-black; }
+.has-rwd-black-fill-color { fill: $color-black; }
+
+.has-rwd-white-color, .txt-rwd-white { color: $color-white; }
+.has-rwd-white-background-color, .bg-rwd-white { background-color: $color-white; }
+.has-rwd-white-fill-color { fill: $color-white; }
+
+.has-deep-sapphire-color, .txt-deep-sapphire { color: $color-deep-sapphire; }
+.has-deep-sapphire-background-color, .bg-deep-sapphire { background-color: $color-deep-sapphire; }
+.has-deep-sapphire-fill-color { fill: $color-deep-sapphire; }
+
+.has-blue-ribbon-color, .txt-blue-ribbon { color: $color-blue-ribbon; }
+.has-blue-ribbon-background-color, .bg-blue-ribbon { background-color: $color-blue-ribbon; }
+.has-blue-ribbon-fill-color { fill: $color-blue-ribbon; }
+
+.has-crimson-color, .txt-crimson { color: $color-crimson; }
+.has-crimson-background-color, .bg-crimson { background-color: $color-crimson; }
+.has-crimson-fill-color { fill: $color-crimson; }
+
+.has-orange-peel-color, .txt-orange-peel, .txt-accent-secondary { color: $color-orange-peel; }
+.has-orange-peel-background-color, .bg-orange-peel, .bg-accent-secondary { background-color: $color-orange-peel; }
+.has-orange-peel-fill-color { fill: $color-orange-peel; }
+
+.has-white-sand-color, .txt-white-sand { color: $color-white-sand; }
+.has-white-sand-background-color, .bg-white-sand { background-color: $color-white-sand; }
+.has-white-sand-fill-color { fill: $color-white-sand; }
+
+.has-peach-color, .txt-peach { color: $color-peach; }
+.has-peach-background-color, .bg-peach { background-color: $color-peach; }
+.has-peach-fill-color { fill: $color-peach; }
+
+.has-peach-yellow-color, .txt-peach-yellow { color: $color-peach-yellow; }
+.has-peach-yellow-background-color, .bg-peach-yellow { background-color: $color-peach-yellow; }
+.has-peach-yellow-fill-color { fill: $color-peach-yellow; }
+
+
 /* Custom Gutenberg colors */
-.has-primary-color, .txt-primary { color: $color-primary; }
-.has-primary-background-color, .bg-primary { background-color: $color-primary; }
-.has-primary-fill-color { fill: $color-primary; }
+// .has-primary-color, .txt-primary { color: $color-primary; }
+// .has-primary-background-color, .bg-primary { background-color: $color-primary; }
+// .has-primary-fill-color { fill: $color-primary; }
 
-.has-secondary-color, .txt-secondary { color: $color-secondary; }
-.has-secondary-background-color, .bg-secondary { background-color: $color-secondary; }
-.has-secondary-fill-color { fill: $color-secondary; }
+// .has-secondary-color, .txt-secondary { color: $color-secondary; }
+// .has-secondary-background-color, .bg-secondary { background-color: $color-secondary; }
+// .has-secondary-fill-color { fill: $color-secondary; }
 
-.has-dark-color { color: $color-dark; }
-.has-dark-background-color { background-color: $color-dark; }
-.has-dark-fill-color { fill: $color-dark; }
+// .has-dark-color { color: $color-dark; }
+// .has-dark-background-color { background-color: $color-dark; }
+// .has-dark-fill-color { fill: $color-dark; }
 
-.has-accent-color, .txt-accent { color: $color-accent; }
-.has-accent-background-color, .bg-accent { background-color: $color-accent; }
-.has-accent-fill-color { fill: $color-accent; }
+// .has-accent-color, .txt-accent { color: $color-accent; }
+// .has-accent-background-color, .bg-accent { background-color: $color-accent; }
+// .has-accent-fill-color { fill: $color-accent; }
 
-.has-romance-color { color: $color-romance; }
-.has-romance-background-color { background-color: $color-romance; }
-.has-romance-fill-color { fill: $color-romance; }
+// .has-romance-color { color: $color-romance; }
+// .has-romance-background-color { background-color: $color-romance; }
+// .has-romance-fill-color { fill: $color-romance; }
 
-.has-white-color { color: $color-white; }
-.has-white-background-color { background-color: $color-white; }
-.has-white-fill-color { fill: $color-white; }
+// .has-white-sand-color { color: $color-white-sand; }
+// .has-white-sand-background-color { background-color: $color-white-sand; }
+// .has-white-sand-fill-color { fill: $color-white-sand; }
 
-.has-light-color { color: $color-light; }
-.has-light-background-color { background-color: $color-light; }
-.has-light-fill-color { fill: $color-light; }
+// .has-dark-orange-color { color: $color-dark-orange; }
+// .has-dark-orange-background-color { background-color: $color-dark-orange; }
+// .has-dark-orange-fill-color { fill: $color-dark-orange; }
 
-.has-black-color { color: $color-black; }
-.has-black-background-color { background-color: $color-black; }
-.has-black-fill-color { fill: $color-black; }
+// .has-white-color { color: $color-white; }
+// .has-white-background-color { background-color: $color-white; }
+// .has-white-fill-color { fill: $color-white; }
+
+// .has-light-color { color: $color-light; }
+// .has-light-background-color { background-color: $color-light; }
+// .has-light-fill-color { fill: $color-light; }
+
+// .has-black-color { color: $color-black; }
+// .has-black-background-color { background-color: $color-black; }
+// .has-black-fill-color { fill: $color-black; }
 
 // Spacing
 .spacer-small { height: 1.25rem; } /* 20px */
@@ -90,4 +151,15 @@
     .pt-xxlarge, .has-padding-top-xxlarge { padding-top: 8.125rem; } /* 130px */
 
     /* 130px */
+}
+
+.z-3 {
+    z-index: 3;
+}
+
+.ellipsis {
+    max-width: 270px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }

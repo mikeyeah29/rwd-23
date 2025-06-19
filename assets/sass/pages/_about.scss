@@ -1,0 +1,41 @@
+.about-content {
+    padding: 80px 0px;
+}
+
+.about-content h2 {
+    margin: 60px 0px 48px 0px;
+    font-size: 42px;
+    text-align: center;
+    /* background: #05192b; */
+    border-bottom: solid 4px;
+    color: #08192b;
+    padding: 20px 40px 16px 40px;
+}
+
+.about-content h3 {
+    margin-bottom: 0px;
+    font-size: 28px;
+    color: #00437f;
+}
+
+.about-content h4 {
+    color: #1a66b3;
+    margin-bottom: 20px;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.about-content p {
+    font-size: 18px;
+}
+
+.about-content .wp-block-separator {
+    margin: 32px 0px;
+    color: #f3f3f3;
+}
+
+.about-content ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+}

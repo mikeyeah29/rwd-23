@@ -1,0 +1,57 @@
+
+.promo-block {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* promo 1 */
+
+.promo-2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0px;
+}
+
+.promo-2 p {
+    font-size: 22px;
+}
+
+.promo-2__inner {
+    padding: 100px 0px 100px 35%;
+    background-position: left center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+}
+
+.promo-2__inner__right {
+    padding: 100px 30% 100px 0%;
+    background-position: right center;
+}
+
+.promo-2 {
+    background-size: 45% auto;
+    background-position: left center;
+}
+
+.promo-2__txt {
+    background: #fff;
+    padding: 32px;
+}
+
+.promo-2--right {
+    background-position: right center;
+}
+
+@media only screen and (max-width: 768px) {
+    .promo-2 {
+        background-size: 100% auto;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .promo-2__inner {
+        padding: 25px;
+    }
+}

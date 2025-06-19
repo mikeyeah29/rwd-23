@@ -1,24 +1,43 @@
 /* Colours
 ============================================*/
 
-$color-oxform-blue: #02182B;
-$color-rwd-blue: #021249;
+// $color-oxform-blue: #02182B;
+// $color-rwd-blue: #021249;
 
-// Color Names
-$color-primary: var(--wp--preset--color--primary);
-$color-secondary: var(--wp--preset--color--secondary);
-$color-accent: var(--wp--preset--color--accent);
-$color-romance: var(--wp--preset--color--romance);
-$color-dark: var(--wp--preset--color--dark);
-$color-light: var(--wp--preset--color--light);
-$color-white: var(--wp--preset--color--white);
-$color-black: var(--wp--preset--color--black);
+// // Color Names
+// $color-primary: var(--wp--preset--color--primary);
+// $color-secondary: var(--wp--preset--color--secondary);
+// $color-accent: var(--wp--preset--color--accent);
+// $color-romance: var(--wp--preset--color--romance);
+// $color-white-sand: var(--wp--preset--color--white-sand);
+// $color-dark-orange: var(--wp--preset--color--dark-orange);
+// $color-dark: var(--wp--preset--color--dark);
+// $color-light: var(--wp--preset--color--light);
+// $color-white: var(--wp--preset--color--white);
+// $color-black: var(--wp--preset--color--black);
+
+$color-black: #100023;
+$color-white: #FFFFFF;
+$color-deep-sapphire: #05175B;
+$color-blue-ribbon: #002877;
+$color-crimson: #E60951;
+$color-orange-peel: #FE6E04;
+$color-white-sand: #FFF6EC;
+$color-peach: #FFF0E7;
+$color-peach-yellow: #FFD3A5;
 
 // Color Uses
-$primary-color: $color-primary;
-$secondary-color: $color-secondary;
-$accent-color: $color-accent;
-$color-text: $color-dark;
+$primary-color: $color-deep-sapphire;
+$color-primary: $color-deep-sapphire;
+$secondary-color: $color-blue-ribbon;
+$color-secondary: $color-blue-ribbon;
+$accent-color: $color-crimson;
+$color-accent: $color-crimson;
+$accent-color-secondary: $color-orange-peel;
+$color-text: $color-black;
+
+$color-dark: $color-black;
+$color-light: $color-white-sand;
 
 /* Fonts
 ============================================*/
@@ -28,7 +47,8 @@ $color-text: $color-dark;
 /* Bold & Powerful ( Default ) */
 
 $font-brand: "komu-a", sans-serif;
-$font-display: "Quicksand", sans-serif;
+// $font-display: "quicksand", sans-serif;
+$font-display: "polymath";
 $font-alternate: "polymath";
 
 $font-heading: "Karmina", cursive;

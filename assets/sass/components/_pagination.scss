@@ -12,8 +12,6 @@
 
 .pagination-prev a,
 .pagination-next a {
-    color: $color-red;
-    background: $color-peach-dark;
     border-radius: 30px 30px 30px 30px;
     display: inline-block;
     font-size: $font-size-small;
@@ -69,4 +67,18 @@
     &.next {
         display: none;
     }
+}
+
+.rwd-pagination {
+    text-align: center;
+    border: solid 1px var(--color-accent);
+    padding: 14px;
+    font-size: 18px;
+    border-left: none;
+    border-right: none;
+    margin-top: 60px;
+}
+
+.rwd-pagination a {
+    color: var(--color-accent);
 }

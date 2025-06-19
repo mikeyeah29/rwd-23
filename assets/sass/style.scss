@@ -8,6 +8,7 @@
 @import 'base/mixins';
 @import 'base/typography';
 @import 'base/utils';
+@import 'base/animations';
 
 @import 'vendor/wp-overrides';
 @import 'vendor/bootstrap-overrides';
@@ -21,10 +22,12 @@
 @import 'components/buttons';
 @import 'components/bg-patterns';
 @import 'components/svg-dividers';
-
-// @import 'components/forms';
-// @import 'components/pagination';
-
+@import 'components/breadcrumbs';
+@import 'components/post-navigation';
+@import 'components/forms';
+@import 'components/pagination';
+@import 'components/pricing-table';
+@import 'components/rwd-list';
 // Blocks
 @import 'blocks/hero';
 @import 'blocks/intro-section';
@@ -32,6 +35,13 @@
 @import 'blocks/faq';
 @import 'blocks/icon-card-grid';
 @import 'blocks/contact-form';
-
+@import 'blocks/promo';
+@import 'blocks/intro-section-centered';
+@import 'blocks/icon-list-section';
+@import 'blocks/process-steps';
 // Page styles
-// @import 'pages/home';
+@import 'pages/services-single';
+@import 'pages/portfolio-archive';
+@import 'pages/portfolio-single';
+@import 'pages/blog-single';
+@import 'pages/about';

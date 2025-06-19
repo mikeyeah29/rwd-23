@@ -10,14 +10,28 @@ $main = RwdColors::getMain();
 $darker = RwdColors::darken($main, 30);
 $lighter = RwdColors::lighten($main, 30);
 
-$color_one = $main;
-$color_two = $darker;
-$color_three = $lighter;
-$color_four = '#111';
+// Default Blue
+// $color_bg = '#000';
+// $color_one = $main;
+// $color_two = $darker;
+// $color_three = $lighter;
+// $color_four = '#111';
+
+// Default Black
+// $color_one = '#1B1B1B';
+// $color_two = '#252525';
+// $color_three = '#000';
+// $color_four = '#000';
+
+$color_bg = RwdColors::getDark();
+$color_one = '#002877';
+$color_two = '#05175B';
+$color_three = '#002877';
+$color_four = '#05175B';
 
 ?>
 
-<svg id="svgWave" preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" style="background: #000 !important;">
+<svg id="svgWave" preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80" style="background: <?php echo $color_bg; ?> !important;">
     <defs>
         <style>
             @keyframes rotate {

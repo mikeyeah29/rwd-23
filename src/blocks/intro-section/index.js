@@ -20,13 +20,14 @@ registerBlockType('rwd/intro-section', {
         backgroundColor: { type: 'string', default: '' },
         verticalAlign: { type: 'string', default: 'align-items-center' },
         heading: { type: 'string', default: '' },
+        supportingText: { type: 'string', default: '' },
     },
     supports: {
         color: { background: true },
         spacing: { padding: true },
     },
     edit: ({ attributes, setAttributes }) => {
-        const { backgroundColor, verticalAlign, heading } = attributes;
+        const { backgroundColor, verticalAlign, heading, supportingText } = attributes;
 
         const blockProps = useBlockProps({
             className: `position-relative bg-${backgroundColor || 'primary'}`,
@@ -70,10 +71,17 @@ registerBlockType('rwd/intro-section', {
                                     value={heading}
                                     onChange={(val) => setAttributes({ heading: val })}
                                 />
+                                <RichText
+                                    tagName="p"
+                                    className="intro-supporting-text txt-dark"
+                                    placeholder={__('Add supporting text…')}
+                                    value={supportingText}
+                                    onChange={(val) => setAttributes({ supportingText: val })}
+                                />
                             </div>
                             <div className="col-md-6">
                                 <InnerBlocks
-                                    allowedBlocks={['core/paragraph', 'core/list']}
+                                    allowedBlocks={['core/paragraph', 'core/list', 'rwd/rwd-list', 'core/button']}
                                     template={[
                                         ['core/paragraph', { placeholder: 'Add text…' }],
                                         ['core/paragraph', { placeholder: 'Add more…' }],

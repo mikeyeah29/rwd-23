@@ -2,7 +2,7 @@
 
 /* COLOURS */
 --color-white: #fff;
---color-black: #151515;
+--color-black: #100023;
 --color-orange: #e77402;
 --color-orange-light: #ff992a;
 --color-light-gold: #f2e255;
@@ -55,7 +55,7 @@
 --font-small-heading: 'Karmina', cursive;
 
 --font-brand: 'komu-a', sans-serif;
---font-display: 'Quicksand', sans-serif;
+--font-display: 'quicksand', sans-serif;
 
 --font-default-display: "polymath" !important;
 

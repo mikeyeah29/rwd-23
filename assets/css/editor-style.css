@@ -8,14 +8,9 @@
 ============================================*/
 /* Font Sizes
 ============================================*/
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300;600;700&family=Rubik+80s+Fade&display=swap");
-@font-face {
-  font-family: Tommy;
-  src: url("fonts/made_tommy/MADE TOMMY Thin Outline_PERSONAL USE.otf");
-}
 .editor-styles-wrapper {
-  font-family: "Quicksand", sans-serif;
-  background: var(--wp--preset--color--primary);
+  font-family: "polymath";
+  background: #05175B;
   padding: 0px 40px;
   /* Button Base
   ====================================*/
@@ -51,6 +46,7 @@
   /* Arrow Styling */
   /* FAQ Answer */
   /* Responsive Design */
+  /* promo 1 */
 }
 .editor-styles-wrapper .wp-block-post-title {
   margin-bottom: 60px;
@@ -62,14 +58,14 @@
   color: inherit;
 }
 .editor-styles-wrapper a {
-  color: var(--wp--preset--color--accent);
+  color: #E60951;
   text-decoration: none;
 }
 .editor-styles-wrapper a:hover {
-  color: var(--wp--preset--color--accent);
+  color: #E60951;
 }
 .editor-styles-wrapper strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
@@ -89,7 +85,7 @@
   color: var(--color-body-txt);
 }
 .editor-styles-wrapper h4 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "polymath";
 }
 .editor-styles-wrapper p,
 .editor-styles-wrapper a,
@@ -97,7 +93,7 @@
 .editor-styles-wrapper div,
 .editor-styles-wrapper input,
 .editor-styles-wrapper textarea {
-  font-family: "Quicksand", sans-serif;
+  font-family: "polymath";
 }
 .editor-styles-wrapper .txt-small {
   font-size: 1.125rem;
@@ -139,6 +135,10 @@
     font-size: 3.25rem;
   }
 }
+.editor-styles-wrapper h1.logoText {
+  margin: 0px;
+  color: var(--color-txt);
+}
 .editor-styles-wrapper .font-brand {
   font-family: "komu-a", sans-serif;
   letter-spacing: 0.06em;
@@ -146,17 +146,20 @@
 .editor-styles-wrapper .font-heading {
   font-family: "Karmina", cursive;
 }
+.editor-styles-wrapper .font-alternate {
+  font-family: "polymath";
+}
 .editor-styles-wrapper .font-small-heading {
   font-family: "polymath" !important;
 }
 .editor-styles-wrapper .font-display {
-  font-family: "Quicksand", sans-serif;
+  font-family: "polymath";
 }
 .editor-styles-wrapper .font-default-display {
   font-family: "polymath" !important;
 }
 .editor-styles-wrapper .rwd-btn {
-  background: var(--wp--preset--color--accent);
+  background: linear-gradient(to right, #FE6E04, #E60951);
   border-radius: 4px;
   color: #fff;
   font-weight: 600;
@@ -169,7 +172,7 @@
   transition: 0.3s;
   position: relative;
   z-index: 1;
-  font-family: "Quicksand", sans-serif;
+  font-family: "polymath";
   letter-spacing: 0.05em;
 }
 @media only screen and (max-width: 769px) {
@@ -206,7 +209,7 @@
   font-size: 20px;
 }
 .editor-styles-wrapper .rwd-btn--main {
-  background: var(--wp--preset--color--primary);
+  background: #05175B;
 }
 .editor-styles-wrapper .rwd-btn--main:hover::before {
   background: var(--color-main);
@@ -253,80 +256,143 @@
   top: auto;
   bottom: 0;
 }
+.editor-styles-wrapper .rwd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.editor-styles-wrapper .rwd-list svg {
+  width: 2rem !important;
+  height: 2rem !important;
+  min-width: 2rem !important;
+  min-height: 2rem !important;
+}
+.editor-styles-wrapper .rwd-list__item {
+  display: flex;
+  gap: 1rem;
+}
+.editor-styles-wrapper .rwd-list__item__title {
+  font-size: 1.5rem;
+}
+.editor-styles-wrapper .rwd-list__item strong {
+  font-weight: 600;
+}
+.editor-styles-wrapper .rwd-list__item p {
+  margin-bottom: 0;
+}
 .editor-styles-wrapper .txt-bold {
   font-weight: 600;
 }
+.editor-styles-wrapper .text-underline {
+  text-decoration: underline;
+}
 .editor-styles-wrapper .has-primary-color, .editor-styles-wrapper .txt-primary {
-  color: var(--wp--preset--color--primary);
+  color: #05175B;
 }
 .editor-styles-wrapper .has-primary-background-color, .editor-styles-wrapper .bg-primary {
-  background-color: var(--wp--preset--color--primary);
+  background-color: #05175B;
 }
 .editor-styles-wrapper .has-primary-fill-color {
-  fill: var(--wp--preset--color--primary);
+  fill: #05175B;
 }
 .editor-styles-wrapper .has-secondary-color, .editor-styles-wrapper .txt-secondary {
-  color: var(--wp--preset--color--secondary);
+  color: #002877;
 }
 .editor-styles-wrapper .has-secondary-background-color, .editor-styles-wrapper .bg-secondary {
-  background-color: var(--wp--preset--color--secondary);
+  background-color: #002877;
 }
 .editor-styles-wrapper .has-secondary-fill-color {
-  fill: var(--wp--preset--color--secondary);
-}
-.editor-styles-wrapper .has-dark-color {
-  color: var(--wp--preset--color--dark);
-}
-.editor-styles-wrapper .has-dark-background-color {
-  background-color: var(--wp--preset--color--dark);
-}
-.editor-styles-wrapper .has-dark-fill-color {
-  fill: var(--wp--preset--color--dark);
+  fill: #002877;
 }
 .editor-styles-wrapper .has-accent-color, .editor-styles-wrapper .txt-accent {
-  color: var(--wp--preset--color--accent);
+  color: #E60951;
 }
 .editor-styles-wrapper .has-accent-background-color, .editor-styles-wrapper .bg-accent {
-  background-color: var(--wp--preset--color--accent);
+  background-color: #E60951;
 }
 .editor-styles-wrapper .has-accent-fill-color {
-  fill: var(--wp--preset--color--accent);
+  fill: #E60951;
 }
-.editor-styles-wrapper .has-romance-color {
-  color: var(--wp--preset--color--romance);
+.editor-styles-wrapper .has-rwd-black-color, .editor-styles-wrapper .txt-rwd-black, .editor-styles-wrapper .txt-dark {
+  color: #100023;
 }
-.editor-styles-wrapper .has-romance-background-color {
-  background-color: var(--wp--preset--color--romance);
+.editor-styles-wrapper .has-rwd-black-background-color, .editor-styles-wrapper .bg-rwd-black, .editor-styles-wrapper .bg-dark {
+  background-color: #100023;
 }
-.editor-styles-wrapper .has-romance-fill-color {
-  fill: var(--wp--preset--color--romance);
+.editor-styles-wrapper .has-rwd-black-fill-color {
+  fill: #100023;
 }
-.editor-styles-wrapper .has-white-color {
-  color: var(--wp--preset--color--white);
+.editor-styles-wrapper .has-rwd-white-color, .editor-styles-wrapper .txt-rwd-white {
+  color: #FFFFFF;
 }
-.editor-styles-wrapper .has-white-background-color {
-  background-color: var(--wp--preset--color--white);
+.editor-styles-wrapper .has-rwd-white-background-color, .editor-styles-wrapper .bg-rwd-white {
+  background-color: #FFFFFF;
 }
-.editor-styles-wrapper .has-white-fill-color {
-  fill: var(--wp--preset--color--white);
+.editor-styles-wrapper .has-rwd-white-fill-color {
+  fill: #FFFFFF;
 }
-.editor-styles-wrapper .has-light-color {
-  color: var(--wp--preset--color--light);
+.editor-styles-wrapper .has-deep-sapphire-color, .editor-styles-wrapper .txt-deep-sapphire {
+  color: #05175B;
 }
-.editor-styles-wrapper .has-light-background-color {
-  background-color: var(--wp--preset--color--light);
+.editor-styles-wrapper .has-deep-sapphire-background-color, .editor-styles-wrapper .bg-deep-sapphire {
+  background-color: #05175B;
 }
-.editor-styles-wrapper .has-light-fill-color {
-  fill: var(--wp--preset--color--light);
+.editor-styles-wrapper .has-deep-sapphire-fill-color {
+  fill: #05175B;
 }
-.editor-styles-wrapper .has-black-color {
-  color: var(--wp--preset--color--black);
+.editor-styles-wrapper .has-blue-ribbon-color, .editor-styles-wrapper .txt-blue-ribbon {
+  color: #002877;
 }
-.editor-styles-wrapper .has-black-background-color {
-  background-color: var(--wp--preset--color--black);
+.editor-styles-wrapper .has-blue-ribbon-background-color, .editor-styles-wrapper .bg-blue-ribbon {
+  background-color: #002877;
 }
-.editor-styles-wrapper .has-black-fill-color {
-  fill: var(--wp--preset--color--black);
+.editor-styles-wrapper .has-blue-ribbon-fill-color {
+  fill: #002877;
+}
+.editor-styles-wrapper .has-crimson-color, .editor-styles-wrapper .txt-crimson {
+  color: #E60951;
+}
+.editor-styles-wrapper .has-crimson-background-color, .editor-styles-wrapper .bg-crimson {
+  background-color: #E60951;
+}
+.editor-styles-wrapper .has-crimson-fill-color {
+  fill: #E60951;
+}
+.editor-styles-wrapper .has-orange-peel-color, .editor-styles-wrapper .txt-orange-peel, .editor-styles-wrapper .txt-accent-secondary {
+  color: #FE6E04;
+}
+.editor-styles-wrapper .has-orange-peel-background-color, .editor-styles-wrapper .bg-orange-peel, .editor-styles-wrapper .bg-accent-secondary {
+  background-color: #FE6E04;
+}
+.editor-styles-wrapper .has-orange-peel-fill-color {
+  fill: #FE6E04;
+}
+.editor-styles-wrapper .has-white-sand-color, .editor-styles-wrapper .txt-white-sand {
+  color: #FFF6EC;
+}
+.editor-styles-wrapper .has-white-sand-background-color, .editor-styles-wrapper .bg-white-sand {
+  background-color: #FFF6EC;
+}
+.editor-styles-wrapper .has-white-sand-fill-color {
+  fill: #FFF6EC;
+}
+.editor-styles-wrapper .has-peach-color, .editor-styles-wrapper .txt-peach {
+  color: #FFF0E7;
+}
+.editor-styles-wrapper .has-peach-background-color, .editor-styles-wrapper .bg-peach {
+  background-color: #FFF0E7;
+}
+.editor-styles-wrapper .has-peach-fill-color {
+  fill: #FFF0E7;
+}
+.editor-styles-wrapper .has-peach-yellow-color, .editor-styles-wrapper .txt-peach-yellow {
+  color: #FFD3A5;
+}
+.editor-styles-wrapper .has-peach-yellow-background-color, .editor-styles-wrapper .bg-peach-yellow {
+  background-color: #FFD3A5;
+}
+.editor-styles-wrapper .has-peach-yellow-fill-color {
+  fill: #FFD3A5;
 }
 .editor-styles-wrapper .spacer-small {
   height: 1.25rem;
@@ -446,13 +512,29 @@
     padding-top: 8.125rem;
   }
 }
+.editor-styles-wrapper .z-3 {
+  z-index: 3;
+}
+.editor-styles-wrapper .ellipsis {
+  max-width: 270px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .editor-styles-wrapper .rwd-hero {
   max-height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, #002073, transparent);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 768px) {
+  .editor-styles-wrapper .rwd-hero {
+    height: calc(100vh - 96px);
+  }
 }
 .editor-styles-wrapper .hero-2 {
   margin-top: 0px;
@@ -488,12 +570,15 @@
   z-index: 3;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .editor-styles-wrapper .hero-2 .rwd-btn {
+    padding: 8px 18px !important;
+    font-size: 22px !important;
+  }
+}
 .editor-styles-wrapper .intro-section-block p {
   font-family: "polymath" !important;
-  color: inherit;
-}
-.editor-styles-wrapper .selling-point-bold-block {
-  padding: 80px 0px;
+  color: inherit !important;
 }
 .editor-styles-wrapper .selling-point-bold-block h2 {
   font-size: 58px;
@@ -519,7 +604,7 @@
 }
 .editor-styles-wrapper .faq-item {
   margin-bottom: 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #ffd0b4;
   border-radius: 8px;
   overflow: hidden;
   transition: border-color 0.3s ease;
@@ -527,8 +612,7 @@
 .editor-styles-wrapper .faq-question {
   width: 100%;
   background-color: #fff;
-  color: #333;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: bold;
   padding: 15px 20px;
   text-align: left;
@@ -541,7 +625,7 @@
   transition: background-color 0.3s ease;
 }
 .editor-styles-wrapper .faq-question:hover {
-  background-color: #f0f0f0;
+  background-color: #ffd0b4;
 }
 .editor-styles-wrapper .faq-arrow {
   font-size: 12px;
@@ -550,6 +634,16 @@
 }
 .editor-styles-wrapper .faq-item.active .faq-arrow {
   transform: rotate(180deg);
+}
+.editor-styles-wrapper .faq-item.active {
+  border-color: #05175B;
+}
+.editor-styles-wrapper .faq-item.active .faq-question {
+  background-color: #05175B;
+  color: #FFF6EC;
+}
+.editor-styles-wrapper .faq-item.active .faq-arrow {
+  color: #FFF6EC;
 }
 .editor-styles-wrapper .faq-answer {
   max-height: 0;
@@ -598,6 +692,9 @@
   border: solid 3px #151515;
   color: #151515;
 }
+.editor-styles-wrapper .contact-form textarea {
+  min-height: 150px;
+}
 .editor-styles-wrapper .contact-form input::placeholder,
 .editor-styles-wrapper .contact-form textarea::placeholder {
   color: #151515;
@@ -613,6 +710,90 @@
   letter-spacing: 0.06em;
   margin: 32px auto 0px auto;
   display: block;
+}
+.editor-styles-wrapper .rwd-form-message,
+.editor-styles-wrapper .rwd-form-message--error {
+  text-align: center;
+  font-size: 22px;
+}
+.editor-styles-wrapper .promo-block {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.editor-styles-wrapper .promo-2 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0px;
+}
+.editor-styles-wrapper .promo-2 p {
+  font-size: 22px;
+}
+.editor-styles-wrapper .promo-2__inner {
+  padding: 100px 0px 100px 35%;
+  background-position: left center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+}
+.editor-styles-wrapper .promo-2__inner__right {
+  padding: 100px 30% 100px 0%;
+  background-position: right center;
+}
+.editor-styles-wrapper .promo-2 {
+  background-size: 45% auto;
+  background-position: left center;
+}
+.editor-styles-wrapper .promo-2__txt {
+  background: #fff;
+  padding: 32px;
+}
+.editor-styles-wrapper .promo-2--right {
+  background-position: right center;
+}
+@media only screen and (max-width: 768px) {
+  .editor-styles-wrapper .promo-2 {
+    background-size: 100% auto;
+    background-position: top center;
+    background-size: cover;
+  }
+  .editor-styles-wrapper .promo-2__inner {
+    padding: 25px;
+  }
+}
+.editor-styles-wrapper .intro-section-centered h2 {
+  font-size: 42px;
+  margin-bottom: 24px;
+  font-family: var(--font-small-heading);
+}
+.editor-styles-wrapper .icon-list-section .icon-item img {
+  width: 48px;
+  height: 48px;
+}
+.editor-styles-wrapper .industry-process .number {
+  background: #25a7a7;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 28px;
+  margin: 0px auto 18px auto;
+  color: white;
+}
+.editor-styles-wrapper .card-text {
+  font-size: 18px;
+  line-height: 1.2em !important;
+}
+.editor-styles-wrapper .process-item-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.editor-styles-wrapper .faq-answer {
+  max-height: 100% !important;
+  background: #f1f1f1;
+  padding: 20px 0px;
 }
 
 /*# sourceMappingURL=editor-style.css.map */

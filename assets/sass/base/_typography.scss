@@ -1,12 +1,3 @@
-// p {
-//     font-size: $font-size-medium; // 22px
-//     line-height: 1.45em;
-//     letter-spacing: -0.05em;
-//     color: $color-dark;
-//     @media (max-width: 768px) {
-//         font-size: $font-size-medium-mobile;
-//     }
-// }
 
 p,
 li {
@@ -25,7 +16,7 @@ a:hover {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 h1,
@@ -83,6 +74,11 @@ $font-sizes: (
     }
 }
 
+h1.logoText {
+    margin: 0px;
+    color: var(--color-txt);
+}
+
 // Fonts 
 
 .font-brand {
@@ -92,6 +88,10 @@ $font-sizes: (
 
 .font-heading {
     font-family: $font-heading;
+}
+
+.font-alternate {
+    font-family: $font-alternate;
 }
 
 .font-small-heading {

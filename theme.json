@@ -4,34 +4,49 @@
         "color": {
             "palette": [
                 {
-                    "name": "Primary",
-                    "slug": "primary",
-                    "color": "#021249"
+                    "name": "RWD Black",
+                    "slug": "rwd-black",
+                    "color": "#100023"
+                },
+                {  
+                    "name": "RWD White",
+                    "slug": "rwd-white",
+                    "color": "#FFFFFF"
                 },
                 {
-                    "name": "Secondary",
-                    "slug": "secondary",
-                    "color": "#fff6dc"
+                    "name": "Deep Sapphire",
+                    "slug": "deep-sapphire",
+                    "color": "#05175B"
                 },
                 {
-                    "name": "Accent",
-                    "slug": "accent",
-                    "color": "#dd1745"
+                    "name": "Blue Ribbon",
+                    "slug": "blue-ribbon",
+                    "color": "#002877"
                 },
                 {
-                    "name": "Romance",
-                    "slug": "romance",
-                    "color": "#fff9fa"
+                    "name": "Crimson",
+                    "slug": "crimson",
+                    "color": "#E60951"
                 },
                 {
-                    "name": "Light",
-                    "slug": "light",
-                    "color": "#ffffff"
+                    "name": "Orange Peel",
+                    "slug": "orange-peel",
+                    "color": "#FE6E04"
                 },
                 {
-                    "name": "Dark",
-                    "slug": "dark",
-                    "color": "#151515"
+                    "name": "White Sand",
+                    "slug": "white-sand",
+                    "color": "#FFF6EC"
+                },
+                {
+                    "name": "Peach",
+                    "slug": "peach",
+                    "color": "#FFF0E7"
+                },
+                {
+                    "name": "Peach Yellow",
+                    "slug": "peach-yellow",
+                    "color": "#FFD3A5"
                 }
             ],
             "custom": true

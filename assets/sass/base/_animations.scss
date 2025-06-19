@@ -1,0 +1,83 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keyframes for precise scrolling */
+@keyframes scroll-up-and-down {
+    0% {
+        transform: translateY(0);
+        /* Start at the top */
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(calc(-100% + 313px));
+        /* Scroll to the bottom */
+    }
+
+    60% {
+        transform: translateY(calc(-100% + 313px));
+        /* Pause at the bottom */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Scroll back to the top */
+    }
+}
+
+/* Keyframes for human-like scrolling */
+@keyframes human-scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10%);
+    }
+
+    40% {
+        transform: translateY(-40%);
+    }
+
+    60% {
+        transform: translateY(calc(-100% + 313px));
+    }
+
+    70% {
+        transform: translateY(calc(-100% + 313px));
+    }
+
+    90% {
+        transform: translateY(-40%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}

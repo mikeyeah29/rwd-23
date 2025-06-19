@@ -5,15 +5,30 @@ define('RWD_COLOR_SKY_BLUE', '#68C5DB');
 define('RWD_COLOR_DODGER_BLUE', '#0197F6');
 define('RWD_COLOR_MUNSELL', '#448FA3');
 define('RWD_COLOR_FLAME', '#dd4d17');
-define('RWD_COLOR_CRIMSON', '#D7263D');
+// define('RWD_COLOR_CRIMSON', '#D7263D');
 define('RWD_COLOR_SUCCESS', '#26c45d');
+
+// New Colors 2025
+define('RWD_COLOR_BLACK', '#100023');
+define('RWD_COLOR_DEEP_SAPPHIRE', '#05175B');
+define('RWD_COLOR_BLUE_RIBBON', '#002877');
+define('RWD_COLOR_CRIMSON', '#E60951');
+define('RWD_COLOR_ORANGE_PEEL', '#FE6E04');
+define('RWD_COLOR_WHITE_SAND', '#FFF6EC');
+define('RWD_COLOR_PEACH', '#FFF0E7');
+define('RWD_COLOR_PEACH_YELLOW', '#FFD3A5');
 
 class RwdColors
 {
-    public static $main = RWD_COLOR_OXFORD_BLUE;
-    public static $secondary = RWD_COLOR_SKY_BLUE;
-    public static $accent = RWD_COLOR_FLAME;
+    // public static $main = RWD_COLOR_OXFORD_BLUE;
+    // public static $secondary = RWD_COLOR_SKY_BLUE;
+    public static $main = RWD_COLOR_DEEP_SAPPHIRE;
+    public static $secondary = RWD_COLOR_BLUE_RIBBON;
+    public static $accent = RWD_COLOR_CRIMSON;
     public static $success = RWD_COLOR_SUCCESS;
+
+    public static $dark = RWD_COLOR_BLACK;
+    public static $light = RWD_COLOR_WHITE_SAND;
 
     static public function getMain()
     {
@@ -34,6 +49,17 @@ class RwdColors
     {
         return Self::$success;
     }
+
+    static public function getDark()
+    {
+        return Self::$dark;
+    }
+
+    static public function getLight()
+    {
+        return Self::$light;
+    }
+    
 
     static public function darken($color, $amount) {
         // Remove the '#' symbol if present

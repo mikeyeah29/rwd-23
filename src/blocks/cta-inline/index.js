@@ -53,15 +53,15 @@ registerBlockType('rwd/cta-inline', {
                         value={text}
                         onChange={(val) => setAttributes({ text: val })}
                     />
-                    {buttonUrl ? (
-                        <a href={buttonUrl} className="rwd-btn book-a-call cursor-pointer">
-                            {buttonText}
-                        </a>
-                    ) : (
-                        <div className="rwd-btn book-a-call cursor-pointer">
-                            {buttonText}
-                        </div>
-                    )}
+
+                    <RichText
+                        tagName="p"
+                        className="rwd-btn book-a-call cursor-pointer"
+                        placeholder={__('Book a FREE Call')}
+                        value={buttonText}
+                        onChange={(val) => setAttributes({ buttonText: val })}
+                    />
+
                     <div className="mt-2">
                         <URLInputButton
                             label={__('CTA Button Link')}

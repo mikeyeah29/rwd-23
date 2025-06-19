@@ -1,0 +1,125 @@
+/* portfolio items */
+
+.portfolio-item {
+    /* border-bottom: solid 5px var(--color-accent); */
+    border-bottom: solid 5px #fff;
+    margin-bottom: 40px;
+    position: relative;
+    box-shadow: 0px 3px 23px #3333;
+}
+
+.portfolio-item .tags {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.portfolio-item__img img {
+    /* height: 290px; */
+    height: 226px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio-item__img--site {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.3s;
+    object-fit: contain;
+    object-position: center;
+}
+
+.portfolio-item:hover .portfolio-item__img--site {
+    opacity: 1;
+    background: #373737;
+    object-fit: cover;
+    object-position: top;
+}
+
+.portfolio-item .cat-tag {
+    /* position: absolute; */
+    /* background: #000; */
+    background: var(--color-tag-bg);
+    color: var(--color-tag-txt);
+    padding: 5px;
+    /* top: 16px;
+    left: 16px; */
+    padding: 9px 12px 6px 12px;
+    font-family: var(--font-brand);
+    letter-spacing: 0.06em;
+    font-size: 18px;
+    line-height: 1em;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.portfolio-item p {
+    /* font-size: 30px; */
+    font-size: 24px;
+    font-family: var(--font-brand);
+    margin: 4px 0px 0px 0px;
+    line-height: 1em;
+}
+
+.portfolio-item__details {
+    /* background: #c53f3f; */
+    background: var(--color-dark);
+}
+
+.portfolio-item__more {
+    width: 35px;
+    border: solid 3px #fff;
+    height: 35px;
+    border-radius: 100%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.portfolio_link {
+    padding: 20px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio_link::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: transparent;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.portfolio_link:hover {
+    /* background: rgba(0,0,0,0.3); */
+    background: #fff;
+    text-decoration: none;
+    color: var(--color-post-thumbnail-bg);
+}
+
+.portfolio_link:hover::before {
+    width: 100%;
+    background: var(--color-post-thumbnail-bg);
+}
+
+.portfolio-item--light .portfolio-item__details {
+    background: var(--color-light) !important;
+}
+
+.portfolio-item--light .portfolio_link p {
+    color: var(--color-dark) !important;
+}
+
+.portfolio-item--light .portfolio-item__more {
+    border: solid 3px var(--color-dark);
+}
+
+.portfolio-item--light {
+    border-bottom: solid 5px var(--color-dark);
+}

@@ -15,10 +15,10 @@
                     <div class="card text-center" data-aos="fade-up">
                         <div class="card-body">
                             <?php if (!empty($card['image'])): ?>
-                                <img src="<?php echo esc_url($card['image']); ?>" alt="" />
+                                <img src="<?php echo esc_url($card['image']); ?>" alt="Icon for <?php echo esc_html($card['title']); ?>" />
                             <?php endif; ?>
                             <?php if (!empty($card['title'])): ?>
-                                <h4 class="card-title font-small-heading"><?php echo $card['title']; ?></h4>
+                                <h3 class="card-title font-small-heading txt-medium"><?php echo $card['title']; ?></h3>
                             <?php endif; ?>
                             <?php if (!empty($card['text'])): ?>
                                 <p class="card-text"><?php echo esc_html($card['text']); ?></p>

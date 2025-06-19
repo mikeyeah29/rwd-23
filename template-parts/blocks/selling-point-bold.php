@@ -24,43 +24,61 @@ $color_classes = RWD_GutenbergHelpers::get_color_classes($attributes);
     <div class="selling-point-bold-block position-relative">
         <div class="container">
 
-            <div class="row d-flex align-items-left justify-content-left">
+            <div class="row d-flex <?php echo $inverted ? 'flex-row-reverse' : 'flex-row'; ?> align-items-center justify-content-left">
 
-                <?php if($inverted) { ?>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="800">
 
-                    <img src="<?php echo $image; ?>" class="position-absolute top-0 left-0" data-aos="fade-right" data-aos-duration="800" />
+                    <?php if(!empty($subheading)) : ?>
+                        <p class="font-small-heading txt-accent mb-0 text-end"><?php echo $subheading; ?></p>
+                    <?php endif; ?>
+                    <?php if(!empty($heading)) : ?>
+                        <h2 class="txt-dark text-end"><?php echo $heading; ?></h2>
+                    <?php endif; ?>
+                    <?php if(!empty($content)) : ?>
+                        <p class="text-end"><?php echo $content; ?></p>
+                    <?php endif; ?>
+
+                </div>
+
+                <div class="col-md-6">
+                    <img src="<?php echo $image; ?>" class="w-100" data-aos="fade-<?php echo $inverted ? 'right' : 'left'; ?>" data-aos-duration="800" />
+                </div>
+
+                <?php // if($inverted) { ?>
+
+                    <!-- <img src="<?php // echo $image; ?>" class="position-absolute top-0 left-0" data-aos="fade-right" data-aos-duration="800" />
 
                     <div class="col-md-6 offset-md-6 order-1 order-md-2" data-aos="fade-up" data-aos-duration="800">
 
-                        <?php if(!empty($subheading)) : ?>
-                            <p class="font-small-heading txt-accent mb-0 text-end"><?php echo $subheading; ?></p>
-                        <?php endif; ?>
-                        <?php if(!empty($heading)) : ?>
-                            <h2 class="txt-dark text-end"><?php echo $heading; ?></h2>
-                        <?php endif; ?>
-                        <?php if(!empty($content)) : ?>
-                            <p class="text-end"><?php echo $content; ?></p>
-                        <?php endif; ?>
+                        <?php // if(!empty($subheading)) : ?>
+                            <p class="font-small-heading txt-accent mb-0 text-end"><?php // echo $subheading; ?></p>
+                        <?php // endif; ?>
+                        <?php // if(!empty($heading)) : ?>
+                            <h2 class="txt-dark text-end"><?php // echo $heading; ?></h2>
+                        <?php // endif; ?>
+                        <?php // if(!empty($content)) : ?>
+                            <p class="text-end"><?php // echo $content; ?></p>
+                        <?php // endif; ?>
 
-                    </div>
+                    </div> -->
 
-                <?php }else{ ?>
+                <?php // }else{ ?>
 
-                    <div class="col-md-6 order-2 order-md-1" data-aos="fade-up" data-aos-duration="800">
-                        <?php if(!empty($subheading)) : ?>
-                            <p class="font-small-heading txt-accent mb-0"><?php echo $subheading; ?></p>
-                        <?php endif; ?>
-                        <?php if(!empty($heading)) : ?>
-                            <h2 class="txt-dark"><?php echo $heading; ?></h2>
-                        <?php endif; ?>
-                        <?php if(!empty($content)) : ?>
-                            <p><?php echo $content; ?></p>
-                        <?php endif; ?>
+                    <!-- <div class="col-md-6 order-2 order-md-1" data-aos="fade-up" data-aos-duration="800">
+                        <?php // if(!empty($subheading)) : ?>
+                            <p class="font-small-heading txt-accent mb-0"><?php // echo $subheading; ?></p>
+                        <?php // endif; ?>
+                        <?php // if(!empty($heading)) : ?>
+                            <h2 class="txt-dark"><?php // echo $heading; ?></h2>
+                        <?php // endif; ?>
+                        <?php // if(!empty($content)) : ?>
+                            <p><?php // echo $content; ?></p>
+                        <?php // endif; ?>
                     </div>
                     
-                    <img src="<?php echo $image; ?>" class="position-absolute right-0" data-aos="fade-left" data-aos-duration="800" />
+                    <img src="<?php // echo $image; ?>" class="position-absolute right-0" data-aos="fade-left" data-aos-duration="800" /> -->
 
-                <?php } ?>
+                <?php // } ?>
 
             </div>
 

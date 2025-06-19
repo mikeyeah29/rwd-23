@@ -60,6 +60,22 @@ class RWD_GutenbergHelpers {
         }
     }
 
+    static public function get_eyebrow_color_class($attributes) {
+        
+        $eyebrowColor = 'blue-ribbon';
+
+        $bgColor = $attributes['backgroundColor'] ?? 'blue-ribbon';
+        
+        $darkColors = ['deep-sapphire', 'crimson', 'orange-peel', 'rwd-black', 'blue-ribbon'];
+
+        if(in_array($bgColor, $darkColors)) {
+            $eyebrowColor = 'orange-peel';
+        }
+
+        return 'has-' . $eyebrowColor . '-color';
+
+    }
+
     static public function get_color_classes($attributes, $defaultColor = '') {
 
         $bgColor = $attributes['backgroundColor'] ?? $defaultColor;

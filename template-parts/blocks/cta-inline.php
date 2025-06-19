@@ -10,6 +10,7 @@
     $style = $attrs['style'] ?? [];
     $padding_classes = RWD_GutenbergHelpers::get_padding_classes($style);
     $color_classes = RWD_GutenbergHelpers::get_color_classes($attrs);
+    $text_color_class = RWD_GutenbergHelpers::get_text_color_class($attrs);
 
 ?>
 
@@ -19,7 +20,7 @@
             <div class="col-md-12 text-center">
 
                 <?php if ($text): ?>
-                    <p class="txt-large font-default-display <?php echo $addTopPadding ? 'pt-small' : ''; ?>">
+                    <p class="txt-large font-default-display <?php echo $addTopPadding ? 'pt-small' : ''; ?> <?php echo $text_color_class; ?>">
                         <?php echo esc_html($text); ?>
                     </p>
                 <?php endif; ?>

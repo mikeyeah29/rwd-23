@@ -8,49 +8,49 @@
 
     <?php
 
-        $errors = [];
-        $formSubmit = false;
+        // $errors = [];
+        // $formSubmit = false;
 
-        if(isset($_POST['rwd_landing_page'])) {
+        // if(isset($_POST['rwd_landing_page'])) {
 
-            $formSubmit = true;
+        //     $formSubmit = true;
 
-            // Example usage
-            $errors = [];
-            $name = sanitize_text_field($_POST['q_name']);
-            $email = sanitize_email($_POST['q_email']);
-            $phone = sanitize_text_field($_POST['q_phone']);
-            $current_site = sanitize_text_field($_POST['q_current_site']);
-            $msg = sanitize_text_field($_POST['q_msg']);
-            $recaptchaResponse = $_POST['g-recaptcha-response'];
+        //     // Example usage
+        //     $errors = [];
+        //     $name = sanitize_text_field($_POST['q_name']);
+        //     $email = sanitize_email($_POST['q_email']);
+        //     $phone = sanitize_text_field($_POST['q_phone']);
+        //     $current_site = sanitize_text_field($_POST['q_current_site']);
+        //     $msg = sanitize_text_field($_POST['q_msg']);
+        //     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
-            // Additional validation
-            if (empty($name)) {
-              $errors[] = "Name is required.";
-            }
+        //     // Additional validation
+        //     if (empty($name)) {
+        //       $errors[] = "Name is required.";
+        //     }
 
-            if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-              $errors[] = "A valid email is required.";
-            }
+        //     if (empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        //       $errors[] = "A valid email is required.";
+        //     }
 
-            if (empty($errors)) {
+        //     if (empty($errors)) {
 
-                $formResMsg = RwdMail::send(RWD_ADMIN_EMAIL, 'book-a-call', [
-                    'name' => $name,
-                    'email' => $email,
-                    'phone' => $phone,
-                    'current_site' => $current_site,
-                    'message' => $msg
-                ]);
+        //         $formResMsg = RwdMail::send(RWD_ADMIN_EMAIL, 'book-a-call', [
+        //             'name' => $name,
+        //             'email' => $email,
+        //             'phone' => $phone,
+        //             'current_site' => $current_site,
+        //             'message' => $msg
+        //         ]);
 
-                $formSent = true;
+        //         $formSent = true;
 
-            }else {
+        //     }else {
 
-                $formResMsg = implode('<br>', $errors);
+        //         $formResMsg = implode('<br>', $errors);
 
-            }
-        }
+        //     }
+        // }
 
         $featuredImg = get_the_post_thumbnail_url( get_the_ID() );
 
@@ -225,48 +225,16 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="row d-flex flex-column align-items-center justify-content-center">
-                    <div class="col-sm-9 d-flex flex-column align-items-center justify-content-center">
-                        <div data-aos-delay="300" data-aos="fade-up" data-aos-duration="600" data-aos-anchor-placement="top-bottom">
-                            <?php // get_template_part('template-parts/industry/browser', null, ['screenshot' => $screenshot]); ?>
-                            <div class="browser">
-                                <div class="browser-bar">
-                                    <div class="browser-btn"></div>
-                                    <div class="browser-btn"></div>
-                                    <div class="browser-btn"></div>
-                                </div>
-                                <div  id="browser-screenshots">
-                                    <div><img src="<?php // echo esc_url($screenshot); ?>" alt="Browser Screenshot" /></div>
-                                    <div><img src="<?php // echo esc_url($screenshot); ?>" alt="Browser Screenshot" /></div>
-                                    <div><img src="<?php //echo esc_url($screenshot); ?>" alt="Browser Screenshot" /></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
         </div>
 
         <div class="bg-white position-relative z-3">
 
-            <div class="industry-intro bg-light">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-sm-7 text-center">
-
-                            <div data-aos="fade-up" data-aos-duration="1000">
-                                <?php echo wpautop(getMeta('intro') ); ?>
-                            </div>
-
-                            <!-- <div id="book-a-call" class="header-cta cursor-pointer">Book a FREE Call</div> -->
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+            <?php get_template_part('template-parts/blocks/intro-section-centered', null, [
+                'attributes' => [
+                    'intro' => getMeta('intro')
+                ]
+            ]); ?>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="<?php echo $color_light; ?>"><path d="M0 100V0h1000v4L0 100z"></path></svg>
 
@@ -375,25 +343,43 @@
 
         <svg xmlns="http://www.w3.org/2000/svg" class="bg-primary" viewBox="0 0 1000 100" fill="<?php echo $color_light; ?>"><path d="M0 100V0h1000v4L0 100z"></path></svg>
 
-        <?php get_template_part('template-parts/industry/process', null, [
-            'subheading' => 'Getting Started',
-            'heading' => 'My Process',
-            'items' => [
-                [
-                    'number' => '1',
-                    'title' => 'Consultation',
-                    'description' => 'Start by learning about your practice, discuss your goals, and outline a clear plan tailored to your needs.'
-                ],
-                [
-                    'number' => '2',
-                    'title' => 'Design & Development',
-                    'description' => 'I\'ll create a clean, professional, and mobile-friendly website that reflects your brand, with a chance for you to review and provide feedback.'
-                ],
-                [
-                    'number' => '3',
-                    'title' => 'Launch & Support',
-                    'description' => 'I\'ll ensure your site is fully optimized, secure, & ready to bring in clients. Ongoing support is available if needed.'
-                ]   
+
+        <?php get_template_part('template-parts/blocks/section-heading', null, [
+            'attributes' => [
+                'eyebrow' => 'Getting Started',
+                'heading' => 'My Process',
+                'largeHeading' => false
+            ]
+        ]); ?>
+
+        <?php get_template_part('template-parts/blocks/process-steps', null, [
+            'attributes' => [
+                'items' => [
+                    [
+                        'number' => '1',
+                        'title' => 'Consultation',
+                        'description' => 'Start by learning about your practice, discuss your goals, and outline a clear plan tailored to your needs.'
+                    ],
+                    [
+                        'number' => '2',
+                        'title' => 'Design & Development',
+                        'description' => 'I\'ll create a clean, professional, and mobile-friendly website that reflects your brand, with a chance for you to review and provide feedback.'
+                    ],
+                    [
+                        'number' => '3',
+                        'title' => 'Launch & Support',
+                            'description' => 'I\'ll ensure your site is fully optimized, secure, & ready to bring in clients. Ongoing support is available if needed.'
+                    ]   
+                ]
+            ]
+        ]); ?>
+
+        <?php get_template_part('template-parts/blocks/cta-inline', null, [
+            'attributes' => [
+                'headline' => 'Ready to get started?',
+                'content' => 'Contact me today to discuss your project and get a free consultation.',
+                'button_text' => 'Get Started',
+                'link' => '#contact-packages'
             ]
         ]); ?>
 
@@ -434,7 +420,7 @@
 
       <svg xmlns="http://www.w3.org/2000/svg" style="background: <?php echo $color_light; ?>;" viewBox="0 0 1000 100" fill="#ffffff"><path d="M0 100V0h1000v4L0 100z"></path></svg>
 
-      <?php get_template_part('template-parts/industry/faqs', null, []); ?>
+      <?php get_template_part('template-parts/blocks/faqs', null, []); ?>
 
       <svg xmlns="http://www.w3.org/2000/svg" style="background: <?php echo $color_primary; ?>;" viewBox="0 0 1000 100" fill="<?php echo $color_light; ?>"><path d="M0 100V0h1000v4L0 100z"></path></svg>
 

@@ -35,13 +35,13 @@
     transition: 0.3s;
     padding: 16px 0px;
 
-    font-family: 'Bebas Neue';
+    font-family: $font-brand;
     font-size: 30px;
     letter-spacing: 0.06em;
 }
 
 .portfolio-nav a:hover {
     background: var(--color-dark);
-    color: var(--color-secondary);
+    color: #FE6E04;
     transition: 0.3s;
 }

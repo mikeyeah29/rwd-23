@@ -1,10 +1,12 @@
 html {
     font-size: $spacing-unit;
+    overflow-x: hidden;
 }
 
 body {
     background: #fff;
     font-family: $font-display;
+    overflow-x: hidden;
 }
 
 body {

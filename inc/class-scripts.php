@@ -4,6 +4,8 @@ namespace RWD;
 
 class Scripts {
 
+    var $typekit_url = 'https://use.typekit.net/wnr4tte.css';
+
     public function __construct() {
         add_action( 'wp_enqueue_scripts', [$this, 'enqueue_style'] );
         add_action( 'wp_enqueue_scripts', [$this, 'enqueue_scripts'] );
@@ -13,6 +15,8 @@ class Scripts {
     // styles and scripts
     public function enqueue_style()
     {
+        wp_enqueue_style( 'typekit', $this->typekit_url, [], null );
+
         wp_enqueue_style( 'aos_css', get_template_directory_uri() . '/lib/aos/aos.css' );
         wp_enqueue_style('slick_css', get_template_directory_uri() . '/lib/slick/slick.css');
 
@@ -22,6 +26,13 @@ class Scripts {
     }
 
     public function enqueue_scripts() {
+
+        wp_enqueue_script( 'helpers-js', get_stylesheet_directory_uri() . '/assets/js/helpers.js', array('jquery'), null, true);
+
+        wp_enqueue_script( 'form-validator-js', get_stylesheet_directory_uri() . '/assets/js/FormValidator.js', array('jquery'), null, true);
+        wp_enqueue_script( 'button-loader-js', get_stylesheet_directory_uri() . '/assets/js/ButtonLoader.js', array('jquery'), null, true);
+        wp_enqueue_script( 'form-handler-js', get_stylesheet_directory_uri() . '/assets/js/FormHandler.js', array('jquery', 'button-loader-js', 'form-validator-js'), null, true);
+
         wp_register_script('aos_js', get_template_directory_uri() . '/lib/aos/aos.js', [], '1.1', true);
         wp_enqueue_script('aos_js');
 
@@ -46,6 +57,14 @@ class Scripts {
             [],
             null
         );
+
+        wp_enqueue_style(
+            'rwd-typekit-editor',
+            $this->typekit_url,
+            [],
+            null
+        );
+
         // Enqueue the compiled editor styles for Gutenberg blocks
         wp_enqueue_style(
             'rwd-block-editor-style',
