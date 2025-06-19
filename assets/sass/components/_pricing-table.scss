@@ -1,0 +1,92 @@
+.features {
+    background: #fff;
+    color: #000;
+    margin-top: 32px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1px;
+    height: max-content;
+    border: solid 1px var(--color-accent);
+}
+
+.features h3 {
+    background: var(--color-accent);
+    padding: 17px 12px 12px 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.features ul {
+    list-style: none;
+    background-size: 20px 20px;
+    padding: 0px;
+    margin: 0px 18px;
+    padding-bottom: 12px;
+}
+
+.features ul li {
+    color: #000;
+    padding: 20px 0px;
+    font-size: 16px;
+    border-bottom: solid 1px #f1f1f1;
+    white-space: nowrap;
+}
+
+.features-selected {
+    margin-top: 20px;
+    box-shadow: 0px 0px 9px 0px #00000054;
+    position: relative;
+    border: solid 1px #e77403;
+}
+
+.features-selected h3 {
+    background: var(--color-secondary);
+    font-size: 38px;
+}
+
+.features-selected ul {
+    padding-bottom: 24px;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.features-tick {
+    width: var(--package-icon-size);
+    height: var(--package-icon-size);
+    /* background-image: url('img/done.svg');
+    background-image: url('img/done-green.png'); */
+    background-image: url('img/done-ffd.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px auto;
+    display: block;
+}
+
+.features-cross {
+    /* width: var(--package-icon-size);
+    height: var(--package-icon-size); */
+    width: 16px;
+    height: 16px;
+    background-image: url('img/cross.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px auto;
+    display: block;
+    opacity: 0.2;
+}
+
+.icon-help {
+    width: var(--package-icon-size);
+    height: var(--package-icon-size);
+    background-image: url('img/help.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-left: auto;
+    /* margin-right: 8px; */
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0.3;
+}
