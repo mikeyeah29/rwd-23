@@ -14,13 +14,16 @@ select {
 
 .form-field {
     margin-bottom: 20px;
+    label {
+        font-weight: 300;
+    }
 }
 
 .form-field input:active,
 .form-field input:focus-visible,
 .form-field textarea:active,
 .form-field textarea:focus-visible {
-    border-color: var(--color-accent);
+    border-color: #007bff;
     outline: none;
 }
 

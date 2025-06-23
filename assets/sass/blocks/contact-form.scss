@@ -5,8 +5,9 @@
 
 .contact-form input,
 .contact-form textarea {
-    border: solid 3px #151515;
-    color: #151515;
+    border: solid 2px #100223;
+    color: #100223;
+    border-radius: 4px;
 }
 
 .contact-form textarea { 
@@ -15,7 +16,7 @@
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #151515;
+    color: #100223;
 }
 
 .contact-form .rwd-form-btn {

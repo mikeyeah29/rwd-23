@@ -9,13 +9,16 @@ $verticalAlign = $attrs['verticalAlign'] ?? 'align-items-center';
 $heading = $attrs['heading'] ?? '';
 $supportingText = $attrs['supportingText'] ?? '';
 
+// $animation_speed = '800';
+$animation_speed = '400';
+
 ?>
 
 <div class="position-relative intro-section-block has-<?php echo esc_attr($background); ?>-background-color">
 
     <div class="container py-5">
         <div class="row <?php echo esc_attr($verticalAlign); ?> justify-content-center">
-            <div class="col-md-5" data-aos="fade-up" data-aos-duration="800">
+            <div class="col-md-5" data-aos="fade-up" data-aos-duration="<?php echo esc_attr($animation_speed); ?>">
                 <?php if (!empty($heading)) : ?>
                     <h2 class="intro-heading has-<?php echo esc_attr($textColor); ?>-color">
                         <?php echo $heading; ?>
@@ -27,7 +30,7 @@ $supportingText = $attrs['supportingText'] ?? '';
                     </p>
                 <?php endif; ?>
             </div>
-            <div class="col-md-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="500">
+            <div class="col-md-5" data-aos="fade-left" data-aos-duration="<?php echo esc_attr($animation_speed); ?>">
                 <div class="intro-content has-<?php echo esc_attr($textColor); ?>-color">
                     <?php echo $content; ?>
                 </div>

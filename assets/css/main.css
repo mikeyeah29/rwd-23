@@ -500,6 +500,12 @@ h1.logoText {
     transform: translateY(10px);
   }
 }
+.wp-block-heading.alt-heading {
+  font-family: "polymath";
+  font-size: 54px;
+  font-weight: 600;
+}
+
 body.header-fixed .hero-container {
   padding-top: var(--header-height);
 }

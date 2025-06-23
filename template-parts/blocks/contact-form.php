@@ -20,6 +20,7 @@ $bot_protector = new \CodeMailer\AntiBotProtector();
 $extra_data = [];
 
 $is_agency_dev_page = false;
+$is_plumbing_page = false;
 $current_url_slug = get_post_field('post_name', get_post());
 
 $extra_data['current_url_slug'] = $current_url_slug;
@@ -28,14 +29,23 @@ if($current_url_slug == 'agency-dev-review') {
     $is_agency_dev_page = true;
 }
 
+if($current_url_slug == 'plumbing-website-design') {
+    $is_plumbing_page = true;
+}
+
 // LABELS
 
+// DEFAULT LABELS
 $current_website_label = 'Current Website ( if you have one )';
 $message_label = 'A bit about what you need help with';
 
 if($is_agency_dev_page) {
     $current_website_label = 'Website To Review';
     $message_label = 'Any additional information you think is relevant';
+}
+
+if($is_plumbing_page) {
+    $message_label = 'Tell me your business name and anything else you think is relevant. If you have any questions, put them here too.';
 }
 
 ?>

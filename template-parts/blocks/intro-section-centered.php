@@ -14,6 +14,9 @@
 
     $theme = (isset($attributes['theme']) ? $attributes['theme'] : 'main');
 
+    // $animation_speed = '1000';
+    $animation_speed = '400';
+
 ?>
 
 <div class="intro-section-centered is-theme-<?php echo $theme; ?> bg-light <?php echo $padding_classes; ?> <?php echo $color_classes; ?>">
@@ -21,7 +24,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-sm-7 text-center">
 
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div data-aos="fade-up" data-aos-duration="<?php echo esc_attr($animation_speed); ?>">
                     <?php if($intro) { ?>
                         <?php echo wpautop($intro); ?>
                     <?php } ?>
